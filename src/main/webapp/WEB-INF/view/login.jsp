@@ -4,7 +4,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form"
            prefix="sf" %>
 
-<layout:templateLogin>
+<layout:template>
     <jsp:body>
         <form id="frm" class="container-fluid" action="/login/" method="post">
             <div class="row">
@@ -27,4 +27,4 @@
         </form>
     </jsp:body>
 
-</layout:templateLogin>
+</layout:template>
