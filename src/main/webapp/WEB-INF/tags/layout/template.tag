@@ -389,8 +389,7 @@
 
   <!-- Custom scripts for all pages-->
   <script src="<c:url value="/static/js/sb-admin-2.min.js"/>"></script>
-  
-  <script src="<c:url value="https://cdn.datatables.net/v/bs4/dt-1.10.18/af-2.3.0/b-1.5.2/r-2.2.2/sc-1.5.0/datatables.min.js" />"></script>
+    
   <jsp:invoke fragment="scriptsEspecificos"></jsp:invoke>
 </body>
 
