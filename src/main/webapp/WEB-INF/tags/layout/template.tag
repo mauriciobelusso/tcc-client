@@ -61,13 +61,13 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Components</span>
+          <span>Componentes</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
+            <h6 class="collapse-header">Componentes personalizados:</h6>
+            <a class="collapse-item" href="buttons.html">Botões</a>
+            <a class="collapse-item" href="cards.html">Cartões</a>
           </div>
         </div>
       </li>
@@ -76,15 +76,15 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-wrench"></i>
-          <span>Utilities</span>
+          <span>Utilitários</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
+            <h6 class="collapse-header">Utilitários personalizados:</h6>
+            <a class="collapse-item" href="utilities-color.html">Cores</a>
+            <a class="collapse-item" href="utilities-border.html">Bordas</a>
+            <a class="collapse-item" href="utilities-animation.html">Animações</a>
+            <a class="collapse-item" href="utilities-other.html">Outros</a>
           </div>
         </div>
       </li>
@@ -101,14 +101,14 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
+          <span>Páginas</span>
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="/login">Login</a>
-            <a class="collapse-item" href="/usuario/register.html">Registrar</a>
-            <a class="collapse-item" href="/forgot-password.html">Perdeu a senha</a>
+            <h6 class="collapse-header">Telas de acesso:</h6>
+            <a class="collapse-item" href="/login">Entrar</a>
+            <a class="collapse-item" href="/usuario/register">Registrar</a>
+            <a class="collapse-item" href="/login/forgot-password">Esqueceu a senha</a>
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Outras páginas:</h6>
             <a class="collapse-item" href="/notFound">404 Page</a>
@@ -121,14 +121,14 @@
       <li class="nav-item">
         <a class="nav-link" href="charts.html">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
+          <span>Gráficos</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>Tabelas</span></a>
       </li>
 
       <!-- Divider -->
@@ -209,7 +209,7 @@
                 </a>
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Log de atividades
+                  Histórico de atividades
                 </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
