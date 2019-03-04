@@ -16,7 +16,7 @@
 
   <!-- Custom fonts for this template-->
   <link href="<c:url value="/static/vendor/fontawesome-free/css/all.min.css"/>" rel="stylesheet" type="text/css">
-  <link href="<c:url value="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"/>" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
   <link href="<c:url value="/static/css/sb-admin-2.min.css"/>" rel="stylesheet">
@@ -106,13 +106,13 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="/login/">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+            <a class="collapse-item" href="/login">Login</a>
+            <a class="collapse-item" href="/usuario/register.html">Registrar</a>
+            <a class="collapse-item" href="/forgot-password.html">Perdeu a senha</a>
             <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
+            <h6 class="collapse-header">Outras páginas:</h6>
+            <a class="collapse-item" href="/notFound">404 Page</a>
+            <a class="collapse-item" href="/blank">Blank Page</a>
           </div>
         </div>
       </li>
