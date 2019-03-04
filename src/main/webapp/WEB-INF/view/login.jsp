@@ -57,10 +57,10 @@
                     </a>
                     <hr>
                     <a href="/" class="btn btn-google btn-user btn-block">
-                      <i class="fab fa-google fa-fw"></i> Login com Google
+                      <i class="fab fa-google fa-fw"></i> Entrar com o Google
                     </a>
                     <a href="/" class="btn btn-facebook btn-user btn-block">
-                      <i class="fab fa-facebook-f fa-fw"></i> Login com Facebook
+                      <i class="fab fa-facebook-f fa-fw"></i> Entrar com o Facebook
                     </a>
                   </form>
                   <hr>

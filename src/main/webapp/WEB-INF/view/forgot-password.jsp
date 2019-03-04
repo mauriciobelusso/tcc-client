@@ -39,23 +39,23 @@
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-2">Forgot Your Password?</h1>
-                    <p class="mb-4">We get it, stuff happens. Just enter your email address below and we'll send you a link to reset your password!</p>
+                    <h1 class="h4 text-gray-900 mb-2">Esqueceu sua senha?</h1>
+                    <p class="mb-4">Nós entendemos, essas coisas acontecem. Basta digitar seu endereço de e-mail abaixo e nós lhe enviaremos um link para redefinir sua senha!</p>
                   </div>
                   <form class="user">
                     <div class="form-group">
                       <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
                     </div>
                     <a href="/login" class="btn btn-primary btn-user btn-block">
-                      Reset Password
+                      Redefinir a senha
                     </a>
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="/usuario/register">Create an Account!</a>
+                    <a class="small" href="/usuario/register">Criar uma conta!</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="/login">Already have an account? Login!</a>
+                    <a class="small" href="/login">Já tem uma conta? Entre!</a>
                   </div>
                 </div>
               </div>
