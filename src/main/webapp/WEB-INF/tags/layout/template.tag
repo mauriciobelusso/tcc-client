@@ -111,7 +111,7 @@
             <a class="collapse-item" href="/login/forgot-password">Esqueceu a senha</a>
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Outras páginas:</h6>
-            <a class="collapse-item" href="/notFound">404 Page</a>
+            <a class="collapse-item" href="/notFound">Página 404</a>
             <a class="collapse-item" href="/blank">Blank Page</a>
           </div>
         </div>
