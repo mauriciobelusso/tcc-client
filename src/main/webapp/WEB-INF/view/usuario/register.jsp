@@ -23,9 +23,7 @@
 </head>
 
 <body class="bg-gradient-primary">
-
   <div class="container">
-
     <div class="card o-hidden border-0 shadow-lg my-5">
       <div class="card-body p-0">
         <!-- Nested Row within Card Body -->
@@ -34,52 +32,41 @@
           <div class="col-lg-7">
             <div class="p-5">
               <div class="text-center">
-                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                <h1 class="h4 text-gray-900 mb-4">Criar uma Conta!</h1>
               </div>
-              <form class="user">
+              <form id="frm"  class="user" action="/usuario/" method="post">
                 <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="First Name">
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Last Name">
+                  <div class="col-sm-12 mb-3 mb-sm-0">
+                    <input type="text" class="form-control form-control-user" id="nome" name="nome" placeholder="Nome Completo">
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
+                  <input type="email" class="form-control form-control-user" id="username" name="username" placeholder="E-mail">
                 </div>
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                    <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Senha">
                   </div>
                   <div class="col-sm-6">
-                    <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
+                    <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repetir Senha">
                   </div>
                 </div>
-                <a href="/login" class="btn btn-primary btn-user btn-block">
+                <button class="btn btn-primary btn-user btn-block" type="submit">
                   Register Account
-                </a>
-                <hr>
-                <a href="/index" class="btn btn-google btn-user btn-block">
-                  <i class="fab fa-google fa-fw"></i> Register with Google
-                </a>
-                <a href="/index" class="btn btn-facebook btn-user btn-block">
-                  <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                </a>
+                </button>
               </form>
               <hr>
               <div class="text-center">
-                <a class="small" href="/login/forgot-password">Forgot Password?</a>
+                <a class="small" href="/login/forgot-password">Esqueceu a senha?</a>
               </div>
               <div class="text-center">
-                <a class="small" href="/login">Already have an account? Login!</a>
+                <a class="small" href="/login">Já tem uma conta? Entre!</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 
   <!-- Bootstrap core JavaScript-->
@@ -91,7 +78,9 @@
 
   <!-- Custom scripts for all pages-->
   <script src="<c:url value="/static/js/sb-admin-2.min.js"/>"></script>
-
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <script src="<c:url value="/static/js/view/usuario/register.js"/>" type="text/javascript" ></script>
 </body>
 
 </html>

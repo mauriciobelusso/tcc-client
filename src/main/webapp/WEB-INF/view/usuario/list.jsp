@@ -3,7 +3,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
 <%@ taglib tagdir="/WEB-INF/tags/layout" prefix="layout" %>
-<fmt:setLocale value="pt_BR"/>
 <layout:template>
 	<jsp:attribute name="scriptsEspecificos">
             <script src="<c:url value="/static/js/usuario/list.js"/>" type="text/javascript"></script>
@@ -19,8 +18,6 @@
 					<th>Cód.</th>
 					<th>Nome</th>
 					<th>Nome de usuário</th>
-					<th>CPF</th>
-					<th>Mercado</th>
 					<th>Ações</th>
 				</tr>
 			</thead>

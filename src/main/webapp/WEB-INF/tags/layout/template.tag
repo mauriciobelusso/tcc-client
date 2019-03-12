@@ -51,7 +51,21 @@
 
       <!-- Divider -->
       <hr class="sidebar-divider">
+      
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Categorias
+      </div>
 
+      <!-- Nav Item - Categorias -->
+      <c:forEach items="categorias" var="categoria">
+	      <li class="nav-item">
+	        <a class="nav-link" href="charts.html">
+	          <i class="fas fa-fw fa-chart-area"></i>
+	          <span>{categoria.nome}</span></a>
+	      </li>
+      </c:forEach>
+      
       <!-- Heading -->
       <div class="sidebar-heading">
         Interface
