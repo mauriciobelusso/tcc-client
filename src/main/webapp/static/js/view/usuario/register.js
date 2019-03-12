@@ -6,14 +6,34 @@ $('#frm').submit(function(){
         data: _json,
         dataType: "json",
         contentType : "application/json",
-        success: function(data){
-            window.location = '/';
-            Swal.fire("Sucesso", "Usuário cadastrado com sucesso!", "success");
-        },
-        error: function(){
-            Swal.fire("Erro", "Usuário não cadastrado", "error");
+        complete: function (data) {
+            if (data.status === 201 || data.status === 200) {
+            	Swal.fire("Salvo", "Cadastro realizado com sucesso!", "success");
+                setTimeout(function () {
+                    top.location.replace('/usuario/register');
+                }, 1500);
+            } else if (data.status === 401 || data.status === 403) {
+            	Swal.fire("Acesso negado!", "Você não tem permissões para executar essa ação", "error");
+                setTimeout(function () {
+                    top.location.replace('/usuario/register');
+                }, 1500);
+            } else if (~data.responseText.indexOf("[uk_cnpj]")) {
+            	Swal.fire("Mercado já cadastrado", "O mercado com cnpj '" + mercado.cnpj + "' já está cadastrado no sistema.", "error");
+            } else if (~data.responseText.indexOf("[uk_razaosocial")) {
+            	Swal.fire("Mercado já cadastrado", "O mercado com a razão social '" + mercado.razaoSocial + "' já está cadastrado no sistema.", "error");
+            } else {
+                console.log(dados);
+                console.log(data.responseText);
+                Swal.fire("Erro", "Falha ao salvar registro", "error");
+                if (mercado == null) {
+                    setTimeout(function () {
+                        top.location.replace('/usuario/register');
+                    }, 1500);
+                }
+            }
         }
     });
+    return false;
 });
 
 function makeIndexedArray(data) {        
