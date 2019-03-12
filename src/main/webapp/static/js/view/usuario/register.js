@@ -12,11 +12,9 @@ $('#frm').submit(function(){
                 setTimeout(function () {
                     top.location.replace('/usuario/register');
                 }, 1500);
+                return true;
             } else if (data.status === 401 || data.status === 403) {
             	Swal.fire("Acesso negado!", "Você não tem permissões para executar essa ação", "error");
-                setTimeout(function () {
-                    top.location.replace('/usuario/register');
-                }, 1500);
             } else if (~data.responseText.indexOf("[uk_cnpj]")) {
             	Swal.fire("Mercado já cadastrado", "O mercado com cnpj '" + mercado.cnpj + "' já está cadastrado no sistema.", "error");
             } else if (~data.responseText.indexOf("[uk_razaosocial")) {
@@ -25,12 +23,8 @@ $('#frm').submit(function(){
                 console.log(dados);
                 console.log(data.responseText);
                 Swal.fire("Erro", "Falha ao salvar registro", "error");
-                if (mercado == null) {
-                    setTimeout(function () {
-                        top.location.replace('/usuario/register');
-                    }, 1500);
-                }
             }
+        	return false;
         }
     });
     return false;
