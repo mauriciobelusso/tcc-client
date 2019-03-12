@@ -15,10 +15,8 @@ $('#frm').submit(function(){
                 return true;
             } else if (data.status === 401 || data.status === 403) {
             	Swal.fire("Acesso negado!", "Você não tem permissões para executar essa ação", "error");
-            } else if (~data.responseText.indexOf("[uk_cnpj]")) {
-            	Swal.fire("Mercado já cadastrado", "O mercado com cnpj '" + mercado.cnpj + "' já está cadastrado no sistema.", "error");
-            } else if (~data.responseText.indexOf("[uk_razaosocial")) {
-            	Swal.fire("Mercado já cadastrado", "O mercado com a razão social '" + mercado.razaoSocial + "' já está cadastrado no sistema.", "error");
+            } else if (~data.responseText.indexOf("[uk_username]")) {
+            	Swal.fire("Usuário já cadastrado", "Usuário já está cadastrado no sistema.", "error");
             } else {
                 console.log(dados);
                 console.log(data.responseText);
