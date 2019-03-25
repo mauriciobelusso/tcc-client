@@ -39,12 +39,13 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Bem vindo de volta!</h1>
                   </div>
-                  <form class="user">
+                  
+                  <form id="frm" class="user" action="/auth/" method="post">
                     <div class="form-group">
-                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Informe seu endereço de e-mail...">
+                      <input type="email" class="form-control form-control-user" id="username" name="username" aria-describedby="emailHelp" placeholder="Informe seu endereço de e-mail...">
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Senha">
+                      <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Senha">
                     </div>
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
@@ -52,17 +53,11 @@
                         <label class="custom-control-label" for="customCheck">Lembrar-me</label>
                       </div>
                     </div>
-                    <a href="/" class="btn btn-primary btn-user btn-block">
+                    <button class="btn btn-primary btn-user btn-block" type="submit">
                       Login
-                    </a>
-                    <hr>
-                    <a href="/" class="btn btn-google btn-user btn-block">
-                      <i class="fab fa-google fa-fw"></i> Entrar com o Google
-                    </a>
-                    <a href="/" class="btn btn-facebook btn-user btn-block">
-                      <i class="fab fa-facebook-f fa-fw"></i> Entrar com o Facebook
-                    </a>
+                    </button>
                   </form>
+                  
                   <hr>
                   <div class="text-center">
                     <a class="small" href="/login/forgot-password">Esqueceu a senha?</a>
@@ -91,6 +86,9 @@
 
   <!-- Custom scripts for all pages-->
   <script src="<c:url value="/static/js/sb-admin-2.min.js"/>"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <script src="<c:url value="/static/js/view/usuario/login.js"/>" type="text/javascript" ></script>
 
 </body>
 </html>

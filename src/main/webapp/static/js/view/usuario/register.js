@@ -1,8 +1,12 @@
 $('#frm').submit(function(){
 	let _json = JSON.stringify(makeIndexedArray($('#frm').serializeArray()));
+    let token = sessionStorage.getItem('token');
     $.ajax({
         type: $('#frm').attr('method'),
         url: "https://tcc-server-faq-rbc.herokuapp.com/usuario/",
+        headers: {
+            "X-Auth-Token": token,
+        },
         data: _json,
         dataType: "json",
         contentType : "application/json",
