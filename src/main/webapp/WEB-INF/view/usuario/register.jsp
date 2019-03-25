@@ -45,14 +45,14 @@
                 </div>
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Senha">
+                    <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Senha" required>
                   </div>
                   <div class="col-sm-6">
-                    <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repetir Senha">
+                    <input type="password" class="form-control form-control-user" id="password_confirm" name="password_confirm" placeholder="Repetir Senha" required>
                   </div>
                 </div>
                 <button class="btn btn-primary btn-user btn-block" type="submit">
-                  Register Account
+                  Registrar-se
                 </button>
               </form>
               <hr>

@@ -1,4 +1,8 @@
 $('#frm').submit(function(){
+	if(!validarSenha()){
+	   Swal.fire("Senhas diferentes!", "Favor digitar senhas iguais", "error");
+	   return false;
+	}
 	let _json = JSON.stringify(makeIndexedArray($('#frm').serializeArray()));
     let token = sessionStorage.getItem('token');
     $.ajax({
@@ -41,4 +45,15 @@ function makeIndexedArray(data) {
     });
     
     return indexed_array;
+}
+
+
+function validarSenha(){
+	password = document.getElementById('password').value;
+	password_confirm = document.getElementById('password_confirm').value;
+   if (password != password_confirm) {
+	   return false;
+   }else{
+	   return true;
+   }
 }
