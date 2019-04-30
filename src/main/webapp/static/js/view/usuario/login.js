@@ -8,6 +8,7 @@ $('#frm').submit(function(){
         contentType : "application/json",
         success: function(data){
             sessionStorage.setItem('token', data.token);
+            sessionStorage.setItem('username',$('#username').val());
             window.location = '/';
         },
         error: function(){

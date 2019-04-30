@@ -30,8 +30,7 @@ public class UsuarioController extends HttpServlet {
 
 
     @GetMapping(value = "/register")
-    public String novo(Model model) {
-        model.addAttribute("usuario", new Usuario());
+    public String novo() {
         return "/usuario/register";
     }
 

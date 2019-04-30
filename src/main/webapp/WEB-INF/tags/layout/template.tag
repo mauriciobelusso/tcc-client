@@ -24,10 +24,8 @@
 </head>
 
 <body id="page-top">
-
   <!-- Page Wrapper -->
   <div id="wrapper">
-
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -38,7 +36,7 @@
         </div>
         <div class="sidebar-brand-text mx-3">FAQ<sup>Téc RBC</sup></div>
       </a>
-
+	
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
@@ -184,7 +182,6 @@
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
-
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
               <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -204,12 +201,20 @@
                 </form>
               </div>
             </li>
-
+			<c:if test="${sessionScope.username==null}">			
             <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow ">
+              <a class="collapse-item" href="/login">Entrar</a> ou 
+              <a class="collapse-item" href="/usuario/register">Registrar-se</a>
+            </li>
+			</c:if>
+			
+			<c:if test="${sessionScope.username!=null}">	
+			<!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">${sessionScope.username}</span>
+                <!-- <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60"> -->
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -232,7 +237,7 @@
                 </a>
               </div>
             </li>
-
+			</c:if>
           </ul>
 
         </nav>
@@ -240,7 +245,9 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-		  <div class="box"><jsp:doBody/></div>
+		  <div class="box">
+		  	<jsp:doBody/>
+		  </div>
         </div>
         <!-- /.container-fluid -->
 
@@ -273,7 +280,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Pronto para Sair?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">�</span>
           </button>
@@ -296,7 +303,7 @@
 
   <!-- Custom scripts for all pages-->
   <script src="<c:url value="/static/js/sb-admin-2.min.js"/>"></script>
-    
+  
   <jsp:invoke fragment="scriptsEspecificos"></jsp:invoke>
 </body>
 
